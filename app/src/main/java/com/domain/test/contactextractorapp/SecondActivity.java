@@ -34,8 +34,7 @@ public class SecondActivity extends AppCompatActivity {
         if (c!=null && c.getCount()>0 && c.moveToFirst()) {
             do{
                 Toast.makeText(this,
-                        c.getString(c.getColumnIndex("_id")) +
-                                ", " +  c.getString(c.getColumnIndex("name")) +
+                              " " +  c.getString(c.getColumnIndex("name")) +
                                 ", " + c.getString(c.getColumnIndex( "number")),
                         Toast.LENGTH_SHORT).show();
             } while (c.moveToNext());
